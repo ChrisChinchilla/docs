@@ -20,7 +20,7 @@ The Docker daemon binds to a Unix socket, not a TCP port. By default it's the
 If you don't want to preface the `docker` command with `sudo`, create a Unix
 group called `docker` and add users to it. When the Docker daemon starts, it
 creates a Unix socket accessible by members of the `docker` group. On some Linux
-distributions, the system automatically creates this group when installing
+distros, the system automatically creates this group when installing
 Docker Engine using a package manager. In that case, there is no need for you to
 manually create the group.
 
@@ -93,10 +93,10 @@ To create the `docker` group and add your user:
 
 ## Configure Docker to start on boot with systemd
 
-Many modern Linux distributions use [systemd](../../config/daemon/systemd.md) to
+Many modern Linux distros use [systemd](../../config/daemon/systemd.md) to
 manage which services start when the system boots. On Debian and Ubuntu, the
 Docker service starts on boot by default. To automatically start Docker and
-containerd on boot for other Linux distributions using systemd, run the
+containerd on boot for other Linux distros using systemd, run the
 following commands:
 
 ```console
