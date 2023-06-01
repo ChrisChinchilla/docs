@@ -71,3 +71,6 @@ format. You can print the results directly to stdout, or export them to a file
 using a structured format, such as Static Analysis Results Interchange Format
 (SARIF). For more information about how to use the `docker scout` CLI, see the
 [reference documentation](../engine/reference/commandline/scout_cves.md).
+
+The plugin is available in Docker Desktop starting with version 4.17 and available
+as a standalone binary from [the `scout-cli` repository](https://github.com/docker/scout-cli).
