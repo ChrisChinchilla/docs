@@ -171,3 +171,53 @@ Following this information is a list of all repositories affected by the vulnera
 - The date the image was last pushed.
 - The registry where the image is stored.
 - The affected package name and version in the image.
+
+## CVE details page
+
+The CVE details page shows detailed information about a particular CVE. The page shows the following information:
+
+- The CVE ID.
+- A description of the vulnerability and the source of the description.
+- The CWE numbers and CWE sources covered by this vulnerability.
+
+### Sources
+
+The sources list shows where Docker Scout gets information about the vulnerability. The top item in the list is the preferred source for the vulnerability, with all other sources listed following in order of preference.
+
+#### Source
+<!-- Four levels? -->
+Each entry in the list shows the following details.
+
+- The name of the source.
+- When the vulnerability was published and when it was last updated on the source.
+- A link to the original source of the vulnerability.
+- The exploitability score for the vulnerability.
+
+    The exploitability score is calculated based on how the vulnerability is accessed, the complexity of the attack, and the number of times an attacker must authenticate to successfully exploit a vulnerability, and the impact on resources beyond the vulnerable component.
+
+- The number of exploits found for the vulnerability.
+- The CWE for the vulnerability.
+- A CVSS score for the vulnerability.
+
+    Docker Scout generates CVSS scores based on the values of the CVSS severity and metrics. 
+
+CVSS:3.0 Severity and metrics
+
+The CVSS metrics represent various qualitative aspects of a vulnerability that influence the overall CVSS score.
+
+<!-- TODO: Add calculation details -->
+
+Packages
+"Packages and package versions affected by this vulnerability"
+Explooits
+"Details of known public exploits"
+
+Advisories
+"Official notifications of vulnerability or threats as a result of vulnerability."
+Patches
+"Code fixes for the vulnerability"
+
+Commits
+"Code commits that created and solved the vulnerability"
+Info
+"Other useful links relating to the vulnerability"
